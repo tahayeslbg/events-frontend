@@ -43,7 +43,7 @@ export const Home: NextPage = () => {
 			const newData = await getEvents();
 			setData(newData);
 		},
-
+		staleTime: 60000,
 		refetchOnWindowFocus: false,
 		cacheTime: 60000,
 	});
@@ -53,6 +53,9 @@ export const Home: NextPage = () => {
 			const meData = await getMe();
 			setMyTickets(meData.tickets);
 		},
+		staleTime: 60000,
+		refetchOnWindowFocus: false,
+		cacheTime: 60000,
 	});
 
 	return (

@@ -32,6 +32,8 @@ const Kategori = ({
 			setData(categoryEvents);
 			return category;
 		},
+		staleTime: 60000,
+		refetchOnWindowFocus: false,
 		cacheTime: 60000,
 	});
 
@@ -70,6 +72,9 @@ const Kategori = ({
 			const meData = await getMe();
 			setMyTickets(meData.tickets);
 		},
+		staleTime: 60000,
+		refetchOnWindowFocus: false,
+		cacheTime: 60000,
 	});
 
 	return (
