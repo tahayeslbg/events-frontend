@@ -22,7 +22,7 @@ Projeyi klonlayın
 Proje dizinine gidin
 
 ```bash
-  cd events-frontend
+  cd /events-frontend
 ```
 
 Gerekli paketleri yükleyin
