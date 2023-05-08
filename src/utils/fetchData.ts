@@ -1,6 +1,9 @@
 import axios from "axios";
 import Cookies from "js-cookie";
-const baseUrl = process.env.NODE_ENV === "development" ? "http://localhost:3001" : process.env.API_URL;
+const baseUrl =
+	process.env.NODE_ENV === "production"
+		? process.env.API_URL
+		: "http://localhost:3001";
 
 interface IUserRegister {
 	name: string;
