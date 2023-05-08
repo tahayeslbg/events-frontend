@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Layout from "../src/layouts/Layout";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const router = useRouter();
@@ -21,6 +22,12 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 	return (
 		<QueryClientProvider client={queryClient}>
+			<Head>
+				<meta
+					http-equiv='Content-Security-Policy'
+					content='upgrade-insecure-requests'
+				/>
+			</Head>
 			<Hydrate state={pageProps.dehydratedState}>
 				{!isLoginRegisterPath ? (
 					<Layout>
