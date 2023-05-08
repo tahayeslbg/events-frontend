@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Galano-Grotesque-Regular";
+	src: url("../assets/fonts/galano-grotesque-regular.otf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Galano-Grotesque-Medium";
+	src: url("../assets/fonts/galano-grotesque-medium.otf");
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Galano-Grotesque-Bold";
+	src: url("../assets/fonts/galano-grotesque-bold.otf");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Galano-Grotesque-Extrabold";
+	src: url("../assets/fonts/galano-grotesque-extrabold.otf");
+	font-weight: 800;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@layer components {
+	.container {
+		@apply max-w-7xl mx-auto desktop:max-w-5xl tablet:max-w-4xl mobile:max-w-[345px];
+	}
+	.filled-button {
+		@apply flex items-center justify-center gap-x-[10px] py-[14px] px-8 bg-[#FF0D87] text-white font-galanoBold;
+	}
+	.plain-button {
+		@apply flex items-center gap-x-[10px] text-black font-galanoRegular;
+	}
+}
