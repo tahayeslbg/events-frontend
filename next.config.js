@@ -6,7 +6,7 @@ const nextConfig = {
 		domains: ["res.cloudinary.com"],
 	},
 	env: {
-		API_URL: "http://165.22.64.81",
+		API_URL: "http://165.22.64.81:3001",
 	},
 };
 
