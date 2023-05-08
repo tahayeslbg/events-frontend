@@ -6,7 +6,7 @@ const nextConfig = {
 		domains: ["res.cloudinary.com"],
 	},
 	env: {
-		API_URL: "https://stingray-app-49bnu.ondigitalocean.app/",
+		API_URL: "https://stingray-app-49bnu.ondigitalocean.app",
 	},
 };
 
