@@ -22,12 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 	return (
 		<QueryClientProvider client={queryClient}>
-			<Head>
-				<meta
-					http-equiv='Content-Security-Policy'
-					content='upgrade-insecure-requests'
-				/>
-			</Head>
+			
 			<Hydrate state={pageProps.dehydratedState}>
 				{!isLoginRegisterPath ? (
 					<Layout>
